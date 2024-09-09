@@ -6,8 +6,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('rose.jpg'); /* Add your roses image */
-    background-size: cover;  /* Ensures the image covers the entire background */
+    background-image: url('rose.jpg'); /* Make sure the image is accessible in your project */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -20,30 +20,86 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the popup */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     justify-content: center;
     align-items: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
 }
 
 /* Popup content styling */
 .popup-content {
-    background-color: #fff;
+    background: linear-gradient(135deg, #ff69b4, #ffd700);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    animation: zoomIn 0.5s ease-in-out; /* Zoom-in effect */
 }
 
 /* Heading style */
 h1 {
-    color: #ff69b4;
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+/* Paragraph style */
+p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Close button styling */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
 }
 
 /* Button styling */
 button {
     background-color: #ff69b4;
     color: white;
-    padding: 10px;
+    padding: 15px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+/* Surprise button specific styles */
+#surprise-btn {
+    background: linear-gradient(135deg, #ff69b4, #32cd32);
+    color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    animation: pulse 1s infinite;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
