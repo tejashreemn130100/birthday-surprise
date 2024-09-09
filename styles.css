@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('C:\Users\KAPL\Desktop\rose.jpg'); /* Add your roses image */
+    background-image: url('rose.jpg'); /* Add your roses image */
     background-size: cover;  /* Ensures the image covers the entire background */
     background-position: center;
     background-repeat: no-repeat;
