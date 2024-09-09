@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add a custom action when the button is clicked
     surpriseBtn.onclick = function() {
-        alert("Your surprise is a special message! 🎉");
+        alert("I LOVE U SIDDU ❤️ 🎉");
     }
 });
