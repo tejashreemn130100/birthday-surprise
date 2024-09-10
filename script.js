@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
             <h1 style="font-size: 4rem;">💖 I LOVE YOU, SIDDU 💖</h1>
             <p style="font-size: 1.5rem;">You mean the world to me! ❤️</p>
             <p style="font-size: 2rem;">🎉 Let’s celebrate your day 🎉</p>
-            <img src="heart.png" alt="Hearts" style="width: 200px; animation: float 2s infinite;">`;
+            <img src="heart.jpg" alt="Hearts" style="width: 200px; animation: float 2s infinite;">`;
     };
 });
